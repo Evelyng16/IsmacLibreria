@@ -1,5 +1,5 @@
 package com.distribuida.entities;
-import java.util.Date;
+
 import org.springframework.stereotype.Component;
 
 @Component

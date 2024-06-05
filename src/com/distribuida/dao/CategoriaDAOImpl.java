@@ -2,6 +2,8 @@ package com.distribuida.dao;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,7 @@ public class CategoriaDAOImpl implements CategoriaDAO {
 	private SessionFactory sessionFactory;
 
 	@Override
+	@Transactional
 	public List<Categoria> findAll() {
 		// TODO Auto-generated method stub
          Session session = sessionFactory.getCurrentSession();

@@ -15,7 +15,7 @@ public class PrincipalCategoria {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-		
+		//Categoria
 		CategoriaDAO categoriaDAO= context.getBean("categoriaDAOImpl", CategoriaDAO.class);
 		 List<Categoria> categoria = categoriaDAO.findAll();
 		 
